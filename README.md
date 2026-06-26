@@ -132,10 +132,10 @@ Install the required libraries.
 pip install -r requirements.txt
 ```
 
-Run the Gradio application.
+Launch Jupyter Notebook.
 
 ```bash
-python app.py
+jupyter notebook
 ```
 
 ---
@@ -172,4 +172,4 @@ REVA University, Bengaluru
 
 ## License
 
-This project is developed for educational and research purposes.
+This project is licensed under the MIT License. See the LICENSE file for more details.
