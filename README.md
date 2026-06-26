@@ -71,9 +71,9 @@ Explainable-AI-for-Brain-Tumour-Diagnosis-Using-EfficientNetB0-and-GradCAM
 │
 ├── README.md
 ├── requirements.txt
-├── app.py
 ├── disease_prediction.ipynb
 ├── brain_tumor_classifier.keras
+├── LICENSE
 │
 ├── Dataset/
 │   ├── README.md
@@ -92,8 +92,7 @@ Explainable-AI-for-Brain-Tumour-Diagnosis-Using-EfficientNetB0-and-GradCAM
 ├── Output/
 │   ├── Prediction1.png
 │   ├── Prediction2.png
-│   ├── Heatmap1.png
-│   └── Heatmap2.png
+│   └── Heatmap1.png
 │
 └── Research_Paper/
     └── Conference_Paper.pdf
