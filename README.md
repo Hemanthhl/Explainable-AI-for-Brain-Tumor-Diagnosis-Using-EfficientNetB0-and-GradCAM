@@ -70,32 +70,35 @@ The project aims to assist healthcare professionals by providing fast, accurate,
 Explainable-AI-for-Brain-Tumour-Diagnosis-Using-EfficientNetB0-and-GradCAM
 │
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 ├── disease_prediction.ipynb
-├── brain_tumor_classifier.keras
-├── LICENSE
+├── disease_prediction_keras.ipynb
 │
-├── Dataset/
+├── dataset/
 │   ├── README.md
 │   └── Dataset_Link.txt
 │
 ├── Images/
-│   ├── Architecture.png
-│   ├── Dataset.png
-│   ├── GradCAM_Output.png
-│   ├── Confusion_Matrix.png
-│   ├── Accuracy_Graph.png
-│   ├── Loss_Graph.png
-│   ├── ROC_Curve.png
-│   └── Gradio_Interface.png
+│   ├── Architecture.jpg
+│   ├── Class_Distribution.jpg
+│   ├── Confusion_Matrix.jpg
+│   ├── GradCAM_Result.jpg
+│   ├── Training_Validation_Curves.png
+│   │
+│   └── Sample_Images/
+│       ├── Yes/
+│       └── No/
 │
 ├── Output/
-│   ├── Prediction1.png
-│   ├── Prediction2.png
-│   └── Heatmap1.png
+│   ├── Dashboard/
+│   │   ├── Predicted_Tumor_dashboard.png
+│   │   └── Predicted_No_Tumor_dashboard.png
+│   │
+│   └── GradCAM_Result.png
 │
-└── Research_Paper/
-    └── Conference_Paper.pdf
+└── Documentation/
+    └── Brain_Tumour_Project_Report.pdf
 ```
 
 ---
