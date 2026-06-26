@@ -12,11 +12,11 @@ This project uses the **Brain MRI Images for Brain Tumor Detection** dataset, wh
 * **Classification Type:** Binary Classification
 * **Classes:**
 
-  * Tumour
-  * No Tumour
+  * Tumor
+  * No Tumor
 * **Total Images:** 522
-* **Tumour Images:** 311
-* **No Tumour Images:** 211
+* **Tumor Images:** 311
+* **No Tumor Images:** 211
 * **Image Formats:** JPEG (.jpg), PNG (.png)
 * **Input Size:** 224 × 224 pixels
 * **Color Mode:** RGB (after preprocessing)
