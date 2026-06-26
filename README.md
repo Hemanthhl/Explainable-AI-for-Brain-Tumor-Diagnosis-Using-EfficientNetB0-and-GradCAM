@@ -1,22 +1,26 @@
-# 🧠 Explainable AI for Brain Tumour Diagnosis Using EfficientNetB0 and Grad-CAM
+# Explainable AI for Brain Tumor Diagnosis Using EfficientNetB0 and Grad-CAM
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Overview
 
-The **Explainable AI for Brain Tumour Diagnosis Using EfficientNetB0 and Grad-CAM** is a Deep Learning and Explainable Artificial Intelligence (XAI) project designed to automatically detect brain tumours from MRI images. The system uses **EfficientNetB0** for accurate tumour classification and **Grad-CAM** to generate visual heatmaps that highlight tumour regions, making the model's predictions transparent and interpretable.
+This project presents an **Explainable Artificial Intelligence (XAI)** system for automatic brain tumor detection from MRI images. It combines **EfficientNetB0** for high-accuracy classification with **Grad-CAM** to generate visual heatmaps highlighting tumor regions, making the model's predictions transparent and interpretable.
 
-The project aims to assist healthcare professionals by providing fast, accurate, and explainable brain tumour diagnosis. An interactive **Gradio-based web application** allows users to upload MRI images and receive real-time predictions along with tumour localization.
+The system assists healthcare professionals by providing fast, accurate, and explainable brain tumor diagnosis through an interactive **Gradio web application**.
 
 ---
 
 ## Objectives
 
-* Detect brain tumours automatically from MRI images.
-* Classify MRI scans into **Tumour** and **No Tumour** categories.
+* Detect brain tumors automatically from MRI images.
+* Classify MRI scans into **Tumor** and **No Tumor**.
 * Improve classification accuracy using EfficientNetB0 transfer learning.
 * Generate Grad-CAM heatmaps for explainable AI.
-* Visualize tumour regions for better model interpretability.
-* Evaluate model performance using standard classification metrics.
-* Provide a user-friendly Gradio interface for prediction.
+* Visualize tumor regions for better model interpretability.
+* Evaluate the model using standard classification metrics.
+* Provide a user-friendly Gradio interface.
 
 ---
 
@@ -25,11 +29,11 @@ The project aims to assist healthcare professionals by providing fast, accurate,
 * Brain MRI Image Classification
 * EfficientNetB0 Transfer Learning
 * Explainable AI using Grad-CAM
-* Tumour Localization with Heatmaps
-* Image Preprocessing and Data Augmentation
-* Binary Classification (Tumour / No Tumour)
-* Performance Evaluation using Accuracy, Precision, Recall and F1-Score
-* Gradio-based Web Interface
+* Tumor Localization with Heatmaps
+* Image Preprocessing & Data Augmentation
+* Binary Classification (**Tumor / No Tumor**)
+* Accuracy, Precision, Recall & F1-Score Evaluation
+* Interactive Gradio Dashboard
 
 ---
 
@@ -67,7 +71,7 @@ The project aims to assist healthcare professionals by providing fast, accurate,
 ## Project Structure
 
 ```text
-Explainable-AI-for-Brain-Tumour-Diagnosis-Using-EfficientNetB0-and-GradCAM
+Explainable-AI-for-Brain-Tumor-Diagnosis-Using-EfficientNetB0-and-GradCAM
 │
 ├── README.md
 ├── LICENSE
@@ -75,7 +79,7 @@ Explainable-AI-for-Brain-Tumour-Diagnosis-Using-EfficientNetB0-and-GradCAM
 ├── disease_prediction.ipynb
 ├── disease_prediction_keras.ipynb
 │
-├── dataset/
+├── Dataset/
 │   ├── README.md
 │   └── Dataset_Link.txt
 │
@@ -85,20 +89,18 @@ Explainable-AI-for-Brain-Tumour-Diagnosis-Using-EfficientNetB0-and-GradCAM
 │   ├── Confusion_Matrix.jpg
 │   ├── GradCAM_Result.jpg
 │   ├── Training_Validation_Curves.png
-│   │
 │   └── Sample_Images/
 │       ├── Yes/
 │       └── No/
 │
 ├── Output/
 │   ├── Dashboard/
-│   │   ├── Predicted_Tumor_dashboard.png
-│   │   └── Predicted_No_Tumor_dashboard.png
-│   │
+│   │   ├── Predicted_Tumor_Dashboard.png
+│   │   └── Predicted_No_Tumor_Dashboard.png
 │   └── GradCAM_Result.png
 │
 └── Documentation/
-    └── Brain_Tumour_Project_Report.pdf
+    └── Brain_Tumor_Project_Report.pdf
 ```
 
 ---
@@ -108,34 +110,34 @@ Explainable-AI-for-Brain-Tumour-Diagnosis-Using-EfficientNetB0-and-GradCAM
 **Dataset:** Brain MRI Images for Brain Tumor Detection
 
 * Total Images: **522**
-* Tumour Images: **311**
-* No Tumour Images: **211**
+* Tumor Images: **311**
+* No Tumor Images: **211**
 * Binary Classification Dataset
 * Image Formats: JPEG, PNG
 
-**Source:** Kaggle
+**Source**
 
 https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection
 
-**Note:** The complete dataset is not included in this repository because of GitHub file size limitations. Please download it separately from the original source.
+> **Note:** The complete dataset is not included in this repository because of GitHub file size limitations.
 
 ---
 
 ## Installation
 
-Clone the repository.
+Clone the repository
 
 ```bash
-git clone https://github.com/Hemanthhl/Explainable-AI-for-Brain-Tumour-Diagnosis-Using-EfficientNetB0-and-GradCAM.git
+git clone https://github.com/Hemanthhl/Explainable-AI-for-Brain-Tumor-Diagnosis-Using-EfficientNetB0-and-GradCAM.git
 ```
 
-Install the required libraries.
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook.
+Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
@@ -143,18 +145,33 @@ jupyter notebook
 
 ---
 
+## Performance
+
+| Metric    | Value      |
+| --------- | ---------- |
+| Accuracy  | **97.47%** |
+| Precision | **97.62%** |
+| Recall    | **97.47%** |
+| F1-Score  | **97.48%** |
+
+---
+
 ## Results
 
-The proposed system successfully performs automated brain tumour detection using MRI images and EfficientNetB0. Grad-CAM generates heatmaps to highlight tumour regions, improving the transparency and interpretability of the model. The system achieved approximately **97.47% classification accuracy** and provides a user-friendly Gradio interface for real-time prediction and visualization.
+The proposed system successfully performs automated brain tumor detection using MRI images with EfficientNetB0.
+
+Grad-CAM generates visual heatmaps highlighting tumor regions, improving transparency and interpretability.
+
+The Gradio web application enables users to upload MRI images and receive real-time predictions along with tumor localization.
 
 ---
 
 ## Future Enhancements
 
-* Multi-class brain tumour classification
-* Brain tumour segmentation using U-Net
+* Multi-class brain tumor classification
+* Brain tumor segmentation using U-Net
 * Support for 3D MRI images
-* Cloud deployment for remote diagnosis
+* Cloud deployment
 * Mobile application for healthcare professionals
 * Integration with hospital information systems
 
@@ -167,12 +184,22 @@ The proposed system successfully performs automated brain tumour detection using
 M.Sc. Data Science
 REVA University, Bengaluru
 
+**GitHub:** https://github.com/Hemanthhl
+
 **LinkedIn:** https://www.linkedin.com/in/hemanth-gowdahl
 
-**GitHub:** https://github.com/Hemanthhl
+---
+
+## Acknowledgements
+
+* Kaggle Brain MRI Images for Brain Tumor Detection Dataset
+* TensorFlow
+* Keras
+* EfficientNetB0
+* Gradio
 
 ---
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the **MIT License**. See the **LICENSE** file for more details.
